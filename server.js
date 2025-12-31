@@ -1,7 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 5000;
+const host = '0.0.0.0';
 
 // Alphabets A-Z with phonetic, Indian boys' name and expanded names list
 const alphabets = [
@@ -41,6 +42,6 @@ app.get('/api/alphabets', (req, res) => {
   res.json(alphabets);
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.listen(port, host, () => {
+  console.log(`Server running at http://${host}:${port}`);
 });
