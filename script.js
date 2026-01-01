@@ -196,12 +196,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateVideoState();
 
-  // Explore button functionality - opens search bar in new tab
+  // Explore button functionality - opens search page in new tab
   const exploreBtn = document.getElementById('exploreBtn');
   if (exploreBtn) {
     exploreBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      window.open(window.location.href + '#search-section', '_blank');
+      window.open('/search.html', '_blank');
     });
   }
 });
