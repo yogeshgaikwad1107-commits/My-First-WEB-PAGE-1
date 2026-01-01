@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Click to open in new tab
       item.addEventListener('click', () => {
-        openInNewTab(text, style.css, style.name);
+        window.open(window.location.href + '#search-section', '_blank');
       });
 
       fragment.appendChild(item);
